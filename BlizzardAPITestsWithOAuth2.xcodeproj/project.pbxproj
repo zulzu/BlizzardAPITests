@@ -11,6 +11,38 @@
 		C91EEF7D25B9960500D8A13E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEF7C25B9960500D8A13E /* ContentView.swift */; };
 		C91EEF7F25B9960900D8A13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEF7E25B9960900D8A13E /* Assets.xcassets */; };
 		C91EEF8225B9960900D8A13E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91EEF8125B9960900D8A13E /* Preview Assets.xcassets */; };
+		C91EEF9125B9981700D8A13E /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91EEF9025B9981700D8A13E /* AuthenticationManager.swift */; };
+		C9598B7A25BB182E00E0253D /* AuthenticationModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B7925BB182D00E0253D /* AuthenticationModelController.swift */; };
+		C9598B7F25BB18E500E0253D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B7E25BB18E500E0253D /* Constants.swift */; };
+		C9598B8325BB18FD00E0253D /* ModelEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B8225BB18FD00E0253D /* ModelEnums.swift */; };
+		C9598B8625BB191100E0253D /* UIEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B8525BB191100E0253D /* UIEnums.swift */; };
+		C9598B8A25BB1A6800E0253D /* AuthToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B8925BB1A6800E0253D /* AuthToken.swift */; };
+		C9598B8D25BB1A9E00E0253D /* DoNotShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B8C25BB1A9E00E0253D /* DoNotShare.swift */; };
+		C9598B9125BB226E00E0253D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B9025BB226E00E0253D /* Extensions.swift */; };
+		C9598B9625BB24A300E0253D /* BattleNetAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B9525BB24A300E0253D /* BattleNetAPI.swift */; };
+		C9598B9A25BB24D300E0253D /* WS_User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B9925BB24D300E0253D /* WS_User.swift */; };
+		C9598B9D25BB256800E0253D /* WS_Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B9C25BB256800E0253D /* WS_Authentication.swift */; };
+		C9598BA025BB259900E0253D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598B9F25BB259900E0253D /* WebService.swift */; };
+		C9598BA325BB25D300E0253D /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BA225BB25D300E0253D /* Network.swift */; };
+		C9598BA625BB25FF00E0253D /* WS_WorldOfWarcraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BA525BB25FF00E0253D /* WS_WorldOfWarcraft.swift */; };
+		C9598BA925BB263200E0253D /* HTTPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BA825BB263200E0253D /* HTTPError.swift */; };
+		C9598BB225BB26E800E0253D /* HTTPHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BB125BB26E800E0253D /* HTTPHeader.swift */; };
+		C9598BB725BB27A700E0253D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BB625BB27A700E0253D /* Result.swift */; };
+		C9598BBB25BB27D100E0253D /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BBA25BB27D100E0253D /* Debug.swift */; };
+		C9598BBE25BB282100E0253D /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BBD25BB282100E0253D /* JSONHelper.swift */; };
+		C9598BC125BB28F800E0253D /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BC025BB28F800E0253D /* Scope.swift */; };
+		C9598BC425BB295D00E0253D /* URL+Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BC325BB295D00E0253D /* URL+Query.swift */; };
+		C9598BC925BB2A8500E0253D /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BC825BB2A8500E0253D /* World.swift */; };
+		C9598BCD25BB2B2D00E0253D /* Access.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BCC25BB2B2D00E0253D /* Access.swift */; };
+		C9598BD125BB2B7000E0253D /* ClientToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BD025BB2B7000E0253D /* ClientToken.swift */; };
+		C9598BD425BB2B9E00E0253D /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BD325BB2B9E00E0253D /* UserToken.swift */; };
+		C9598BDF25BB300E00E0253D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BDE25BB300E00E0253D /* HomeView.swift */; };
+		C9598BEF25BB392F00E0253D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BEE25BB392F00E0253D /* Image.swift */; };
+		C9598BF325BB394D00E0253D /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BF225BB394D00E0253D /* Locale.swift */; };
+		C9598BF625BB396B00E0253D /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BF525BB396B00E0253D /* Media.swift */; };
+		C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598BF825BB398F00E0253D /* ResourceLink.swift */; };
+		C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */; };
+		C9598C5825BB3F4A00E0253D /* WorldOfWarcraftModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C5725BB3F4A00E0253D /* WorldOfWarcraftModelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +52,38 @@
 		C91EEF7E25B9960900D8A13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91EEF8125B9960900D8A13E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C91EEF8325B9960900D8A13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91EEF9025B9981700D8A13E /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		C9598B7925BB182D00E0253D /* AuthenticationModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModelController.swift; sourceTree = "<group>"; };
+		C9598B7E25BB18E500E0253D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C9598B8225BB18FD00E0253D /* ModelEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelEnums.swift; sourceTree = "<group>"; };
+		C9598B8525BB191100E0253D /* UIEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIEnums.swift; sourceTree = "<group>"; };
+		C9598B8925BB1A6800E0253D /* AuthToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthToken.swift; sourceTree = "<group>"; };
+		C9598B8C25BB1A9E00E0253D /* DoNotShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotShare.swift; sourceTree = "<group>"; };
+		C9598B9025BB226E00E0253D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C9598B9525BB24A300E0253D /* BattleNetAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleNetAPI.swift; sourceTree = "<group>"; };
+		C9598B9925BB24D300E0253D /* WS_User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WS_User.swift; sourceTree = "<group>"; };
+		C9598B9C25BB256800E0253D /* WS_Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WS_Authentication.swift; sourceTree = "<group>"; };
+		C9598B9F25BB259900E0253D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		C9598BA225BB25D300E0253D /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C9598BA525BB25FF00E0253D /* WS_WorldOfWarcraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WS_WorldOfWarcraft.swift; sourceTree = "<group>"; };
+		C9598BA825BB263200E0253D /* HTTPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPError.swift; sourceTree = "<group>"; };
+		C9598BB125BB26E800E0253D /* HTTPHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeader.swift; sourceTree = "<group>"; };
+		C9598BB625BB27A700E0253D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		C9598BBA25BB27D100E0253D /* Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
+		C9598BBD25BB282100E0253D /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		C9598BC025BB28F800E0253D /* Scope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
+		C9598BC325BB295D00E0253D /* URL+Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Query.swift"; sourceTree = "<group>"; };
+		C9598BC825BB2A8500E0253D /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		C9598BCC25BB2B2D00E0253D /* Access.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Access.swift; sourceTree = "<group>"; };
+		C9598BD025BB2B7000E0253D /* ClientToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientToken.swift; sourceTree = "<group>"; };
+		C9598BD325BB2B9E00E0253D /* UserToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
+		C9598BDE25BB300E00E0253D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C9598BEE25BB392F00E0253D /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C9598BF225BB394D00E0253D /* Locale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		C9598BF525BB396B00E0253D /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		C9598BF825BB398F00E0253D /* ResourceLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLink.swift; sourceTree = "<group>"; };
+		C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicKeystoneAffix.swift; sourceTree = "<group>"; };
+		C9598C5725BB3F4A00E0253D /* WorldOfWarcraftModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfWarcraftModelController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +116,10 @@
 		C91EEF7925B9960500D8A13E /* BlizzardAPITestsWithOAuth2 */ = {
 			isa = PBXGroup;
 			children = (
+				C9598BB525BB278700E0253D /* Utilities */,
+				C9598B9425BB248100E0253D /* Network */,
+				C9598B7D25BB18A300E0253D /* Common */,
+				C9598BDB25BB2F9D00E0253D /* UI */,
 				C91EEF7A25B9960500D8A13E /* BlizzardAPITestsWithOAuth2App.swift */,
 				C91EEF7C25B9960500D8A13E /* ContentView.swift */,
 				C91EEF7E25B9960900D8A13E /* Assets.xcassets */,
@@ -67,6 +135,138 @@
 				C91EEF8125B9960900D8A13E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C91EEF8E25B997BC00D8A13E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C91EEF9025B9981700D8A13E /* AuthenticationManager.swift */,
+				C9598B8925BB1A6800E0253D /* AuthToken.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C91EEF8F25B997CA00D8A13E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C9598B7E25BB18E500E0253D /* Constants.swift */,
+				C9598B8C25BB1A9E00E0253D /* DoNotShare.swift */,
+				C9598B8225BB18FD00E0253D /* ModelEnums.swift */,
+				C9598B8525BB191100E0253D /* UIEnums.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C9598B7825BB180D00E0253D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9598B7925BB182D00E0253D /* AuthenticationModelController.swift */,
+				C9598C5725BB3F4A00E0253D /* WorldOfWarcraftModelController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C9598B7D25BB18A300E0253D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BED25BB391100E0253D /* Shared */,
+				C9598BD625BB2C2200E0253D /* WoW */,
+				C9598B8F25BB224D00E0253D /* Extensions */,
+				C91EEF8F25B997CA00D8A13E /* Constants */,
+				C9598B7825BB180D00E0253D /* Controllers */,
+				C91EEF8E25B997BC00D8A13E /* Auth */,
+				C9598BCB25BB2B0800E0253D /* Network */,
+				C9598BC825BB2A8500E0253D /* World.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C9598B8F25BB224D00E0253D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C9598B9025BB226E00E0253D /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C9598B9425BB248100E0253D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C9598B9525BB24A300E0253D /* BattleNetAPI.swift */,
+				C9598BA825BB263200E0253D /* HTTPError.swift */,
+				C9598BB125BB26E800E0253D /* HTTPHeader.swift */,
+				C9598B9C25BB256800E0253D /* WS_Authentication.swift */,
+				C9598BA225BB25D300E0253D /* Network.swift */,
+				C9598B9F25BB259900E0253D /* WebService.swift */,
+				C9598B9925BB24D300E0253D /* WS_User.swift */,
+				C9598BA525BB25FF00E0253D /* WS_WorldOfWarcraft.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C9598BB525BB278700E0253D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BB625BB27A700E0253D /* Result.swift */,
+				C9598BC325BB295D00E0253D /* URL+Query.swift */,
+				C9598BBD25BB282100E0253D /* JSONHelper.swift */,
+				C9598BBA25BB27D100E0253D /* Debug.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C9598BCB25BB2B0800E0253D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BCC25BB2B2D00E0253D /* Access.swift */,
+				C9598BD025BB2B7000E0253D /* ClientToken.swift */,
+				C9598BC025BB28F800E0253D /* Scope.swift */,
+				C9598BD325BB2B9E00E0253D /* UserToken.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C9598BD625BB2C2200E0253D /* WoW */ = {
+			isa = PBXGroup;
+			children = (
+				C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */,
+			);
+			path = WoW;
+			sourceTree = "<group>";
+		};
+		C9598BDB25BB2F9D00E0253D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BDC25BB2FBA00E0253D /* Views */,
+				C9598BDD25BB2FC200E0253D /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C9598BDC25BB2FBA00E0253D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C9598BDD25BB2FC200E0253D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BDE25BB300E00E0253D /* HomeView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C9598BED25BB391100E0253D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C9598BEE25BB392F00E0253D /* Image.swift */,
+				C9598BF225BB394D00E0253D /* Locale.swift */,
+				C9598BF525BB396B00E0253D /* Media.swift */,
+				C9598BF825BB398F00E0253D /* ResourceLink.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +285,8 @@
 			dependencies = (
 			);
 			name = BlizzardAPITestsWithOAuth2;
+			packageProductDependencies = (
+			);
 			productName = BlizzardAPITestsWithOAuth2;
 			productReference = C91EEF7725B9960500D8A13E /* BlizzardAPITestsWithOAuth2.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +314,8 @@
 				Base,
 			);
 			mainGroup = C91EEF6E25B9960500D8A13E;
+			packageReferences = (
+			);
 			productRefGroup = C91EEF7825B9960500D8A13E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +342,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9598B7F25BB18E500E0253D /* Constants.swift in Sources */,
 				C91EEF7D25B9960500D8A13E /* ContentView.swift in Sources */,
+				C9598BA025BB259900E0253D /* WebService.swift in Sources */,
+				C9598BA625BB25FF00E0253D /* WS_WorldOfWarcraft.swift in Sources */,
+				C9598BC425BB295D00E0253D /* URL+Query.swift in Sources */,
 				C91EEF7B25B9960500D8A13E /* BlizzardAPITestsWithOAuth2App.swift in Sources */,
+				C9598BC925BB2A8500E0253D /* World.swift in Sources */,
+				C9598B9D25BB256800E0253D /* WS_Authentication.swift in Sources */,
+				C9598BF625BB396B00E0253D /* Media.swift in Sources */,
+				C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */,
+				C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */,
+				C9598BA325BB25D300E0253D /* Network.swift in Sources */,
+				C91EEF9125B9981700D8A13E /* AuthenticationManager.swift in Sources */,
+				C9598B8325BB18FD00E0253D /* ModelEnums.swift in Sources */,
+				C9598B9125BB226E00E0253D /* Extensions.swift in Sources */,
+				C9598BDF25BB300E00E0253D /* HomeView.swift in Sources */,
+				C9598B8D25BB1A9E00E0253D /* DoNotShare.swift in Sources */,
+				C9598BCD25BB2B2D00E0253D /* Access.swift in Sources */,
+				C9598BB225BB26E800E0253D /* HTTPHeader.swift in Sources */,
+				C9598BBE25BB282100E0253D /* JSONHelper.swift in Sources */,
+				C9598BD425BB2B9E00E0253D /* UserToken.swift in Sources */,
+				C9598BBB25BB27D100E0253D /* Debug.swift in Sources */,
+				C9598B8A25BB1A6800E0253D /* AuthToken.swift in Sources */,
+				C9598BC125BB28F800E0253D /* Scope.swift in Sources */,
+				C9598B9A25BB24D300E0253D /* WS_User.swift in Sources */,
+				C9598B7A25BB182E00E0253D /* AuthenticationModelController.swift in Sources */,
+				C9598B9625BB24A300E0253D /* BattleNetAPI.swift in Sources */,
+				C9598BD125BB2B7000E0253D /* ClientToken.swift in Sources */,
+				C9598B8625BB191100E0253D /* UIEnums.swift in Sources */,
+				C9598BB725BB27A700E0253D /* Result.swift in Sources */,
+				C9598BEF25BB392F00E0253D /* Image.swift in Sources */,
+				C9598BA925BB263200E0253D /* HTTPError.swift in Sources */,
+				C9598C5825BB3F4A00E0253D /* WorldOfWarcraftModelController.swift in Sources */,
+				C9598BF325BB394D00E0253D /* Locale.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
