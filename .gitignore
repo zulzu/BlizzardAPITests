@@ -39,4 +39,4 @@ DerivedData/
 
 # End of https://www.toptal.com/developers/gitignore/api/xcode
 
-DoNotShare.swift
+Common/Constants/DoNotShare.swift
