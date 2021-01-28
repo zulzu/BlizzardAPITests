@@ -7,9 +7,9 @@ struct ContentView: View {
     // MARK: Properties
     //------------------------------------
     // # Public/Internal/Open
-    let authManager = AuthenticationManager()
-    
+
     // # Private/Fileprivate
+    private let authManager = AuthenticationManager()
     @State private var isLoggedIn = false
     
     // # Body
@@ -19,7 +19,7 @@ struct ContentView: View {
             
             if isLoggedIn {
                 
-                HomeView()
+                HomeView(viewModel: HomeViewModel.init())
                 
             } else {
                 
@@ -44,7 +44,7 @@ struct ContentView: View {
                         isLoggedIn = true
                     }
                 case .failure(let error):
-                    self.handleError(error)
+                    ErrorHandler().handleError(error)
                 }
             }
         })
@@ -53,9 +53,6 @@ struct ContentView: View {
     //=======================================
     // MARK: Public Methods
     //=======================================
-    func handleError(_ error: HTTPError, function: String = #function) {
-        Debug.print(error.message, function: function)
-    }
     
     //=======================================
     // MARK: Private Methods
