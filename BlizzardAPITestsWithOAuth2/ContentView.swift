@@ -10,22 +10,44 @@ struct ContentView: View {
     let authManager = AuthenticationManager()
     
     // # Private/Fileprivate
+    @State private var isLoggedIn = false
     
     // # Body
     var body: some View {
         
-        HomeView()
-            .onAppear(perform: {
-                authManager.getClientAccessToken() { result in
-                    switch result {
-                    case .success(let token):
-                        Debug.print("clientAccessToken: \(token)")
-                        Debug.print("Ready for game data web services")
-                    case .failure(let error):
-                        self.handleError(error)
-                    }
+        VStack {
+            
+            if isLoggedIn {
+                
+                HomeView()
+                
+            } else {
+                
+                VStack {
+                    
+                    Text("Welcome!")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .padding()
+                    Text("Getting data from Blizzard")
+                        .font(.caption)
                 }
-            })
+            }
+        }
+        .onAppear(perform: {
+            authManager.getClientAccessToken() { result in
+                switch result {
+                case .success(let token):
+                    Debug.print("clientAccessToken: \(token)")
+                    Debug.print("Ready for game data web services")
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        isLoggedIn = true
+                    }
+                case .failure(let error):
+                    self.handleError(error)
+                }
+            }
+        })
     }
     
     //=======================================

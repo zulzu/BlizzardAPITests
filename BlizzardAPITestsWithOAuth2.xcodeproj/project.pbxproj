@@ -43,6 +43,8 @@
 		C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */; };
 		C9598C5825BB3F4A00E0253D /* WorldOfWarcraftModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C5725BB3F4A00E0253D /* WorldOfWarcraftModelController.swift */; };
 		C9598C5F25C0713F00E0253D /* DoNotShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C5E25C0713F00E0253D /* DoNotShare.swift */; };
+		C9598C6225C07A5D00E0253D /* CharacterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C6125C07A5D00E0253D /* CharacterProfile.swift */; };
+		C9598C6825C1C3DB00E0253D /* CovenantIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C6725C1C3DB00E0253D /* CovenantIndex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MythicKeystoneAffix.swift; sourceTree = "<group>"; };
 		C9598C5725BB3F4A00E0253D /* WorldOfWarcraftModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldOfWarcraftModelController.swift; sourceTree = "<group>"; };
 		C9598C5E25C0713F00E0253D /* DoNotShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoNotShare.swift; sourceTree = "<group>"; };
+		C9598C6125C07A5D00E0253D /* CharacterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfile.swift; sourceTree = "<group>"; };
+		C9598C6725C1C3DB00E0253D /* CovenantIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantIndex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +233,8 @@
 		C9598BD625BB2C2200E0253D /* WoW */ = {
 			isa = PBXGroup;
 			children = (
+				C9598C6125C07A5D00E0253D /* CharacterProfile.swift */,
+				C9598C6725C1C3DB00E0253D /* CovenantIndex.swift */,
 				C9598C1425BB3AF100E0253D /* MythicKeystoneAffix.swift */,
 			);
 			path = WoW;
@@ -355,8 +361,10 @@
 				C9598C5F25C0713F00E0253D /* DoNotShare.swift in Sources */,
 				C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */,
 				C9598BA325BB25D300E0253D /* Network.swift in Sources */,
+				C9598C6225C07A5D00E0253D /* CharacterProfile.swift in Sources */,
 				C91EEF9125B9981700D8A13E /* AuthenticationManager.swift in Sources */,
 				C9598B8325BB18FD00E0253D /* ModelEnums.swift in Sources */,
+				C9598C6825C1C3DB00E0253D /* CovenantIndex.swift in Sources */,
 				C9598B9125BB226E00E0253D /* Extensions.swift in Sources */,
 				C9598BDF25BB300E00E0253D /* HomeView.swift in Sources */,
 				C9598BCD25BB2B2D00E0253D /* Access.swift in Sources */,
