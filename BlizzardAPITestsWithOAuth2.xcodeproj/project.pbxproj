@@ -48,6 +48,8 @@
 		C9598C8A25C302A700E0253D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C8925C302A700E0253D /* Strings.swift */; };
 		C9598C8D25C30CC200E0253D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C8C25C30CC200E0253D /* HomeViewModel.swift */; };
 		C9598C9425C31CA400E0253D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9325C31CA400E0253D /* ErrorHandler.swift */; };
+		C9598C9725C3261400E0253D /* CovenantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9625C3261400E0253D /* CovenantMainView.swift */; };
+		C9598C9A25C3264000E0253D /* CovenantMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +96,8 @@
 		C9598C8925C302A700E0253D /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		C9598C8C25C30CC200E0253D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		C9598C9325C31CA400E0253D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		C9598C9625C3261400E0253D /* CovenantMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantMainView.swift; sourceTree = "<group>"; };
+		C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantMainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +273,8 @@
 			children = (
 				C9598BDE25BB300E00E0253D /* HomeView.swift */,
 				C9598C8C25C30CC200E0253D /* HomeViewModel.swift */,
+				C9598C9625C3261400E0253D /* CovenantMainView.swift */,
+				C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 				C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */,
 				C9598C5F25C0713F00E0253D /* DoNotShare.swift in Sources */,
 				C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */,
+				C9598C9A25C3264000E0253D /* CovenantMainViewModel.swift in Sources */,
 				C9598BA325BB25D300E0253D /* Network.swift in Sources */,
 				C9598C6225C07A5D00E0253D /* CharacterProfile.swift in Sources */,
 				C91EEF9125B9981700D8A13E /* AuthenticationManager.swift in Sources */,
@@ -380,6 +387,7 @@
 				C9598C8D25C30CC200E0253D /* HomeViewModel.swift in Sources */,
 				C9598BDF25BB300E00E0253D /* HomeView.swift in Sources */,
 				C9598BCD25BB2B2D00E0253D /* Access.swift in Sources */,
+				C9598C9725C3261400E0253D /* CovenantMainView.swift in Sources */,
 				C9598BB225BB26E800E0253D /* HTTPHeader.swift in Sources */,
 				C9598BBE25BB282100E0253D /* JSONHelper.swift in Sources */,
 				C9598BD425BB2B9E00E0253D /* UserToken.swift in Sources */,

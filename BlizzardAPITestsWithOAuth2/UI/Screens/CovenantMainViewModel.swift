@@ -2,16 +2,21 @@
 import Foundation
 import SwiftUI
 
+
 //=======================================
 // MARK: ViewModel
 //=======================================
-final class HomeViewModel: ObservableObject {
+final class CovenantMainViewModel: ObservableObject {
     
     //------------------------------------
     // MARK: Properties
     //------------------------------------
     // # Public/Internal/Open
-    @Published var covenantNames: Array<String> = []
+    @Published var covenantName: String = ""
+    @Published var covenantDescription: String = ""
+    @Published var abilityName: String = ""
+    @Published var abilityDescription: String = ""
+
     @Published var isCovenantLoaded = false
     
     // # Private/Fileprivate
@@ -31,23 +36,23 @@ final class HomeViewModel: ObservableObject {
 //------------------------------------
 // MARK: Retrieving data
 //------------------------------------
-extension HomeViewModel {
+extension CovenantMainViewModel {
     
-    // MARK: Covenant Index API
-    func getCovenantIndex(region: APIRegion = Current.region, locale: APILocale? = Current.locale) {
-        wowMC.getCovenantIndex(region: region, locale: locale) { result in
+    // MARK: Covenant API
+    func getCovenant(id: Int, region: APIRegion = Current.region, locale: APILocale? = Current.locale) {
+        wowMC.getCovenant(id: id, region: region, locale: locale) { result in
             
             DispatchQueue.main.async {
                 
                 switch result {
                 
-                case .success(let covenantIndex):
-                    let covenantCount = 1...covenantIndex.covenants.count
-                    for number in covenantCount {
-                        self.covenantNames.append("\(covenantIndex.covenants[number - 1].name ?? String.getString(.errorMsg))")
-                    }
+                case .success(let covenant):
+                    self.covenantName = covenant.name
+                    self.covenantDescription = covenant.description
+                    self.abilityName = covenant.signature_ability.spell_tooltip.spell.name
+                    self.abilityDescription = covenant.signature_ability.spell_tooltip.description
                     self.isCovenantLoaded = true
-                    
+
                 case .failure(let error):
                     ErrorHandler().handleError(error)
                 }

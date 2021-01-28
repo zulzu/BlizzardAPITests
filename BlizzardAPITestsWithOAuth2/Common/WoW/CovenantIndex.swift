@@ -21,11 +21,30 @@ class Covenant: Codable {
     let id: Int
     var name: String
     let description: String
-//    let signature_ability: String
+    let signature_ability: CovenantSignatureAbility
 //    let class_abilities: String
 //    let soulbinds: String
 //    let renown_rewards: String
 //    let media: MediaLink
+}
+
+class CovenantSignatureAbility: Codable {
+    
+    let id: Int
+    var spell_tooltip: CovenantSpellTooltip
+}
+
+class CovenantSpellTooltip: Codable {
+    
+    let spell: CovenantSpell
+    let description: String
+    var cast_time: String
+}
+
+class CovenantSpell: Codable {
+    
+    let name: String
+    let id: Int
 }
 
 
