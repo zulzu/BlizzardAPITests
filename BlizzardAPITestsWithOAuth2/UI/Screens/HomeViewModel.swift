@@ -11,11 +11,10 @@ final class HomeViewModel: ObservableObject {
     // MARK: Properties
     //------------------------------------
     // # Public/Internal/Open
-    @Published var covenantNames: Array<String> = []
-    @Published var isCovenantLoaded = false
+    @Published var isLoggedIn = false
     
     // # Private/Fileprivate
-    private let wowMC = WorldOfWarcraftModelController.shared
+    private let authManager = AuthenticationManager()
     
     //=======================================
     // MARK: Public Methods
@@ -33,24 +32,17 @@ final class HomeViewModel: ObservableObject {
 //------------------------------------
 extension HomeViewModel {
     
-    // MARK: Covenant Index API
-    func getCovenantIndex(region: APIRegion = Current.region, locale: APILocale? = Current.locale) {
-        wowMC.getCovenantIndex(region: region, locale: locale) { result in
-            
-            DispatchQueue.main.async {
-                
-                switch result {
-                
-                case .success(let covenantIndex):
-                    let covenantCount = 1...covenantIndex.covenants.count
-                    for number in covenantCount {
-                        self.covenantNames.append("\(covenantIndex.covenants[number - 1].name ?? String.getString(.errorMsg))")
-                    }
-                    self.isCovenantLoaded = true
-                    
-                case .failure(let error):
-                    ErrorHandler().handleError(error)
+    func login() {
+        authManager.getClientAccessToken() { result in
+            switch result {
+            case .success(let token):
+                Debug.print("clientAccessToken: \(token)")
+                Debug.print("Ready for game data web services")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    self.isLoggedIn = true
                 }
+            case .failure(let error):
+                ErrorHandler().handleError(error)
             }
         }
     }

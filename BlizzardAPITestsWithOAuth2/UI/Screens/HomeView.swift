@@ -14,31 +14,27 @@ struct HomeView: View {
     // # Body
     var body: some View {
         
-        NavigationView {
+        VStack {
             
-            VStack {
+            if viewModel.isLoggedIn {
                 
-                Text("Hello, World of Warcraft!")
-                    .font(.headline)
-                    .fontWeight(.bold)
+                CovenantsView(viewModel: CovenantsViewModel.init())
+            } else {
                 
-                if viewModel.isCovenantLoaded {
+                VStack {
                     
-                    ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
-                        
-                        NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
-                            .frame(width: 220, height: 80, alignment: .center)
-                            .background(Color.blue)
-                            .cornerRadius(10.0)
-                            .accentColor(.black)
-                            .padding()
-                    }
+                    Text("Welcome!")
+                        .font(.title)
+                        .fontWeight(.black)
+                        .padding()
+                    Text("Getting data from Blizzard")
+                        .font(.caption)
                 }
             }
         }
-        .onAppear {
-            viewModel.getCovenantIndex()
-        }
+        .onAppear(perform: {
+            viewModel.login()
+        })
     }
     
     //=======================================
@@ -56,6 +52,6 @@ struct HomeView: View {
 ////=======================================
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(viewModel: HomeViewModel.init())
+        CovenantsView(viewModel: CovenantsViewModel.init())
     }
 }

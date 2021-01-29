@@ -50,6 +50,8 @@
 		C9598C9425C31CA400E0253D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9325C31CA400E0253D /* ErrorHandler.swift */; };
 		C9598C9725C3261400E0253D /* CovenantMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9625C3261400E0253D /* CovenantMainView.swift */; };
 		C9598C9A25C3264000E0253D /* CovenantMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */; };
+		C9598C9D25C45D9A00E0253D /* CovenantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9C25C45D9A00E0253D /* CovenantsView.swift */; };
+		C9598CA025C45DAA00E0253D /* CovenantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		C9598C9325C31CA400E0253D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		C9598C9625C3261400E0253D /* CovenantMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantMainView.swift; sourceTree = "<group>"; };
 		C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantMainViewModel.swift; sourceTree = "<group>"; };
+		C9598C9C25C45D9A00E0253D /* CovenantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsView.swift; sourceTree = "<group>"; };
+		C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,6 +277,8 @@
 			children = (
 				C9598BDE25BB300E00E0253D /* HomeView.swift */,
 				C9598C8C25C30CC200E0253D /* HomeViewModel.swift */,
+				C9598C9C25C45D9A00E0253D /* CovenantsView.swift */,
+				C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */,
 				C9598C9625C3261400E0253D /* CovenantMainView.swift */,
 				C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */,
 			);
@@ -373,6 +379,7 @@
 				C9598BC925BB2A8500E0253D /* World.swift in Sources */,
 				C9598B9D25BB256800E0253D /* WS_Authentication.swift in Sources */,
 				C9598BF625BB396B00E0253D /* Media.swift in Sources */,
+				C9598C9D25C45D9A00E0253D /* CovenantsView.swift in Sources */,
 				C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */,
 				C9598C5F25C0713F00E0253D /* DoNotShare.swift in Sources */,
 				C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */,
@@ -391,6 +398,7 @@
 				C9598BB225BB26E800E0253D /* HTTPHeader.swift in Sources */,
 				C9598BBE25BB282100E0253D /* JSONHelper.swift in Sources */,
 				C9598BD425BB2B9E00E0253D /* UserToken.swift in Sources */,
+				C9598CA025C45DAA00E0253D /* CovenantsViewModel.swift in Sources */,
 				C9598BBB25BB27D100E0253D /* Debug.swift in Sources */,
 				C9598B8A25BB1A6800E0253D /* AuthToken.swift in Sources */,
 				C9598BC125BB28F800E0253D /* Scope.swift in Sources */,
