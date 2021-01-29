@@ -52,6 +52,7 @@
 		C9598C9A25C3264000E0253D /* CovenantMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */; };
 		C9598C9D25C45D9A00E0253D /* CovenantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9C25C45D9A00E0253D /* CovenantsView.swift */; };
 		C9598CA025C45DAA00E0253D /* CovenantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */; };
+		C9598CA425C4625200E0253D /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CA325C4625200E0253D /* Modifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +103,7 @@
 		C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantMainViewModel.swift; sourceTree = "<group>"; };
 		C9598C9C25C45D9A00E0253D /* CovenantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsView.swift; sourceTree = "<group>"; };
 		C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsViewModel.swift; sourceTree = "<group>"; };
+		C9598CA325C4625200E0253D /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		C9598BDB25BB2F9D00E0253D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				C9598CA225C461E300E0253D /* Modifiers */,
 				C9598BDC25BB2FBA00E0253D /* Views */,
 				C9598BDD25BB2FC200E0253D /* Screens */,
 			);
@@ -294,6 +297,14 @@
 				C9598BF825BB398F00E0253D /* ResourceLink.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		C9598CA225C461E300E0253D /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				C9598CA325C4625200E0253D /* Modifiers.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +392,7 @@
 				C9598BF625BB396B00E0253D /* Media.swift in Sources */,
 				C9598C9D25C45D9A00E0253D /* CovenantsView.swift in Sources */,
 				C9598C1525BB3AF100E0253D /* MythicKeystoneAffix.swift in Sources */,
+				C9598CA425C4625200E0253D /* Modifiers.swift in Sources */,
 				C9598C5F25C0713F00E0253D /* DoNotShare.swift in Sources */,
 				C9598BF925BB398F00E0253D /* ResourceLink.swift in Sources */,
 				C9598C9A25C3264000E0253D /* CovenantMainViewModel.swift in Sources */,

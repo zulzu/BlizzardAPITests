@@ -9,10 +9,8 @@ struct CovenantMainView: View {
     // # Public/Internal/Open
     @ObservedObject var viewModel: CovenantMainViewModel
     var covenantID: Int
-    var animation: Animation = .easeIn(duration: 1.0)
 
     // # Private/Fileprivate
-    @State private var opacity: Double = 0.0
 
     // # Body
     var body: some View {
@@ -24,26 +22,14 @@ struct CovenantMainView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     
                     Text(viewModel.covenantDescription)
-                        .opacity(opacity)
-                        .onAppear {
-                            opacity = 1.0
-                        }
-                        .animation(animation)
+                        .modifier(AnimatedOpacity(delay: 0.0))
 
                     Text("Signature ability: \(viewModel.abilityName)")
                         .bold()
-                        .opacity(opacity)
-                        .onAppear {
-                            opacity = 1.0
-                        }
-                        .animation(animation.delay(0.5))
+                        .modifier(AnimatedOpacity(delay: 0.5))
 
                     Text(viewModel.abilityDescription)
-                        .opacity(opacity)
-                        .onAppear {
-                            opacity = 1.0
-                        }
-                        .animation(animation.delay(1.0))
+                        .modifier(AnimatedOpacity(delay: 1.0))
 
                     Spacer()
                 }
