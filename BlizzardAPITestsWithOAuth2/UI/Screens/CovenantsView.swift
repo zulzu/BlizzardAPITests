@@ -18,7 +18,7 @@ struct CovenantsView: View {
             
             VStack {
                 
-                Text("Hello, World of Warcraft!")
+                Text("World of Warcraft Covenants in Shadowlands:")
                     .font(.headline)
                     .fontWeight(.bold)
                 
@@ -36,6 +36,7 @@ struct CovenantsView: View {
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             viewModel.getCovenantIndex()
         }

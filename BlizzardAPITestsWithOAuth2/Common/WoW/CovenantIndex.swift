@@ -19,26 +19,26 @@ class Covenant: Codable {
     
     let _links: SelfLink<Covenant>
     let id: Int
-    var name: String
+    let name: String
     let description: String
     let signature_ability: CovenantSignatureAbility
-//    let class_abilities: String
-//    let soulbinds: String
-//    let renown_rewards: String
-//    let media: MediaLink
+    let class_abilities: [CovenantClassAbilities]
+    //    let soulbinds: String
+    //    let renown_rewards: String
+    //    let media: MediaLink
 }
 
 class CovenantSignatureAbility: Codable {
     
     let id: Int
-    var spell_tooltip: CovenantSpellTooltip
+    let spell_tooltip: CovenantSpellTooltip
 }
 
 class CovenantSpellTooltip: Codable {
     
     let spell: CovenantSpell
     let description: String
-    var cast_time: String
+    let cast_time: String
 }
 
 class CovenantSpell: Codable {
@@ -47,4 +47,29 @@ class CovenantSpell: Codable {
     let id: Int
 }
 
+class CovenantClassAbilities: Codable {
+    
+    let id: Int
+    let playable_class: CovenantAbilityPlayableClass
+    let spell_tooltip: CovenantAbilitySpellTooltip
+}
 
+class CovenantAbilityPlayableClass: Codable {
+    
+    let name: String
+}
+
+class CovenantAbilitySpellTooltip: Codable {
+    
+    let spell: CovenantAbilitySpellName
+    let description: String
+    let cast_time: String
+    let power_cost: String?
+    let range: String?
+    let cooldown: String?
+}
+
+class CovenantAbilitySpellName: Codable {
+    
+    let name: String
+}

@@ -6,7 +6,7 @@ struct AnimatedOpacity: ViewModifier {
     // For changing the opacity
     @State private var opacity: Double = 0.0
     // The type of the animation
-    var animation: Animation = .easeIn(duration: 1.0)
+    var animation: Animation = .easeOut(duration: 0.7)
     // The length of the delay for the animation
     var delay: Double = 0.0
     

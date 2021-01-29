@@ -53,6 +53,9 @@
 		C9598C9D25C45D9A00E0253D /* CovenantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9C25C45D9A00E0253D /* CovenantsView.swift */; };
 		C9598CA025C45DAA00E0253D /* CovenantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */; };
 		C9598CA425C4625200E0253D /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CA325C4625200E0253D /* Modifiers.swift */; };
+		C9598CA725C4777000E0253D /* CovenantClassAbilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CA625C4777000E0253D /* CovenantClassAbilitiesView.swift */; };
+		C9598CAA25C4779900E0253D /* CovenantClassAbilitiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CA925C4779900E0253D /* CovenantClassAbilitiesViewModel.swift */; };
+		C9598CAD25C488F900E0253D /* ClassAbilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CAC25C488F900E0253D /* ClassAbilityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		C9598C9C25C45D9A00E0253D /* CovenantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsView.swift; sourceTree = "<group>"; };
 		C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantsViewModel.swift; sourceTree = "<group>"; };
 		C9598CA325C4625200E0253D /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		C9598CA625C4777000E0253D /* CovenantClassAbilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantClassAbilitiesView.swift; sourceTree = "<group>"; };
+		C9598CA925C4779900E0253D /* CovenantClassAbilitiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovenantClassAbilitiesViewModel.swift; sourceTree = "<group>"; };
+		C9598CAC25C488F900E0253D /* ClassAbilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassAbilityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +277,7 @@
 		C9598BDC25BB2FBA00E0253D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C9598CAC25C488F900E0253D /* ClassAbilityView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +291,8 @@
 				C9598C9F25C45DAA00E0253D /* CovenantsViewModel.swift */,
 				C9598C9625C3261400E0253D /* CovenantMainView.swift */,
 				C9598C9925C3264000E0253D /* CovenantMainViewModel.swift */,
+				C9598CA625C4777000E0253D /* CovenantClassAbilitiesView.swift */,
+				C9598CA925C4779900E0253D /* CovenantClassAbilitiesViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -384,9 +393,12 @@
 				C9598B7F25BB18E500E0253D /* Constants.swift in Sources */,
 				C91EEF7D25B9960500D8A13E /* ContentView.swift in Sources */,
 				C9598BA025BB259900E0253D /* WebService.swift in Sources */,
+				C9598CAA25C4779900E0253D /* CovenantClassAbilitiesViewModel.swift in Sources */,
 				C9598BA625BB25FF00E0253D /* WS_WorldOfWarcraft.swift in Sources */,
 				C9598BC425BB295D00E0253D /* URL+Query.swift in Sources */,
+				C9598CA725C4777000E0253D /* CovenantClassAbilitiesView.swift in Sources */,
 				C91EEF7B25B9960500D8A13E /* BlizzardAPITestsWithOAuth2App.swift in Sources */,
+				C9598CAD25C488F900E0253D /* ClassAbilityView.swift in Sources */,
 				C9598BC925BB2A8500E0253D /* World.swift in Sources */,
 				C9598B9D25BB256800E0253D /* WS_Authentication.swift in Sources */,
 				C9598BF625BB396B00E0253D /* Media.swift in Sources */,
