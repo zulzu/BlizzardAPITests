@@ -14,27 +14,36 @@ struct HomeView: View {
     // # Body
     var body: some View {
         
-        VStack {
+        ZStack {
             
-            if viewModel.isLoggedIn {
+            Color.background01
+            
+            VStack {
                 
-                CovenantsView(viewModel: CovenantsViewModel.init())
-            } else {
-                
-                VStack {
+                if viewModel.isLoggedIn {
                     
-                    Text("Welcome!")
-                        .font(.title)
-                        .fontWeight(.black)
-                        .padding()
-                    Text("Getting data from Blizzard")
-                        .font(.caption)
+                    CovenantsView()
+                    
+                } else {
+                    
+                    VStack {
+                        
+                        Text("Welcome!")
+                            .font(.title)
+                            .fontWeight(.black)
+                            .foregroundColor(.gold)
+                            .padding()
+                        Text("Getting data from Blizzard")
+                            .font(.caption)
+                            .foregroundColor(.background03)
+                    }
                 }
             }
+            .onAppear(perform: {
+                viewModel.login()
+            })
         }
-        .onAppear(perform: {
-            viewModel.login()
-        })
+        .edgesIgnoringSafeArea(.all)
     }
     
     //=======================================
@@ -52,6 +61,6 @@ struct HomeView: View {
 ////=======================================
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        CovenantsView(viewModel: CovenantsViewModel.init())
+        CovenantsView()
     }
 }

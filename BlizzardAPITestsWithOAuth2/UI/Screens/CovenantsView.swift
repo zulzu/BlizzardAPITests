@@ -21,6 +21,8 @@ struct CovenantsView: View {
                 Text("World of Warcraft Covenants in Shadowlands:")
                     .font(.headline)
                     .fontWeight(.bold)
+                    .foregroundColor(.gold)
+                    .padding()
                 
                 if viewModel.isCovenantLoaded {
                     
@@ -36,6 +38,9 @@ struct CovenantsView: View {
                 }
             }
         }
+        .background(Color.background01)
+        .foregroundColor(.background01)
+        .edgesIgnoringSafeArea(.all)
         .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             viewModel.getCovenantIndex()
@@ -45,6 +50,9 @@ struct CovenantsView: View {
     //=======================================
     // MARK: Public Methods
     //=======================================
+    init() {
+        viewModel = CovenantsViewModel.init()
+    }
     
     //=======================================
     // MARK: Private Methods
@@ -57,6 +65,6 @@ struct CovenantsView: View {
 ////=======================================
 struct CovenantsView_Previews: PreviewProvider {
     static var previews: some View {
-        CovenantsView(viewModel: CovenantsViewModel.init())
+        CovenantsView()
     }
 }

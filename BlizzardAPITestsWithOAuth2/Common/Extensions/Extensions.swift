@@ -1,6 +1,7 @@
 
 #if os(iOS)
 import UIKit
+import SwiftUI
 
 public extension UIDevice {
     
@@ -35,5 +36,13 @@ public extension UIWindow {
             return UIApplication.shared.keyWindow
         }
     }
+}
+
+public extension Color {
+    
+    static let background01: Color = Color("background01")
+    static let background02: Color = Color("background02")
+    static let background03: Color = Color("background03")
+    static let gold: Color = Color("gold")
 }
 #endif
