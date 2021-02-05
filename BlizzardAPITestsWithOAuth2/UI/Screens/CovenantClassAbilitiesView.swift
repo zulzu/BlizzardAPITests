@@ -25,10 +25,10 @@ struct CovenantClassAbilitiesView: View {
                         
                         ForEach(0..<viewModel.playableClasses.count, id: \.self) { (idx)  in
                             
-                            ClassAbilityView(className: viewModel.playableClasses[idx], spellName: viewModel.spellName[idx], spellDescription: viewModel.spellDescription[idx])
-                                .foregroundColor(.textColour)
+                            ClassAbilityView(className: viewModel.playableClasses[idx], spellName: viewModel.spellName[idx], spellDescription: viewModel.spellDescription[idx], isLast: idx == (viewModel.playableClasses.count - 1) ? true : false)
                                 .modifier(AnimatedOpacity(delay: 0.4 * Double(idx)))
-                                .padding()
+                                .padding(.horizontal)
+                                .padding(.bottom, 10)
                         }
                     }
                 }

@@ -34,25 +34,15 @@ struct CovenantsView: View {
                     
                     ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
                         
-                        NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
-                            .frame(width: 200, height: 60, alignment: .center)
-                            .background(Color.background03)
-                            .accentColor(.textColour)
-                            .opacity(1.0)
-                            .cornerRadius(10.0)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.background02, lineWidth: 4)
-                            )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.gold, lineWidth: 2)
-                            )
+                        CustomNavigationButton(size: CGSize(width: 200, height: 60),
+                                               text: "\(viewModel.covenantNames[idx])",
+                                               destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
                             .padding()
                     }
                 }
             }
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             viewModel.getCovenantIndex()
         }

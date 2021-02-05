@@ -39,19 +39,9 @@ struct CovenantMainView: View {
                             .foregroundColor(.textColour)
                             .modifier(AnimatedOpacity(delay: 1.3))
                         
-                        NavigationLink("Class abilities", destination: CovenantClassAbilitiesView(viewModel: CovenantClassAbilitiesViewModel.init(), covenantID: covenantID))
-                            .frame(width: 180, height: 50)
-                            .background(Color.background03)
-                            .cornerRadius(10.0)
-                            .accentColor(.textColour)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.background02, lineWidth: 4)
-                            )
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.gold, lineWidth: 2)
-                            )
+                        CustomNavigationButton(size: CGSize(width: 180, height: 50),
+                                               text: "Class abilities",
+                                               destination: CovenantClassAbilitiesView(viewModel: CovenantClassAbilitiesViewModel.init(), covenantID: covenantID))
                             .modifier(AnimatedOpacity(delay: 1.8))
                             .padding(.top)
                         

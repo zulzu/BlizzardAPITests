@@ -59,6 +59,7 @@
 		C9598CB725CC7AC600E0253D /* ZStackWithBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CB625CC7AC600E0253D /* ZStackWithBackground.swift */; };
 		C9598CBA25CC7B2E00E0253D /* VStackWithNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CB925CC7B2E00E0253D /* VStackWithNavigationBar.swift */; };
 		C9598CBE25CDB2A800E0253D /* ThickDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CBD25CDB2A800E0253D /* ThickDivider.swift */; };
+		C9598CC125CDC25D00E0253D /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CC025CDC25D00E0253D /* CustomNavigationButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		C9598CB625CC7AC600E0253D /* ZStackWithBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZStackWithBackground.swift; sourceTree = "<group>"; };
 		C9598CB925CC7B2E00E0253D /* VStackWithNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackWithNavigationBar.swift; sourceTree = "<group>"; };
 		C9598CBD25CDB2A800E0253D /* ThickDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThickDivider.swift; sourceTree = "<group>"; };
+		C9598CC025CDC25D00E0253D /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +290,7 @@
 				C9598CB325CC79A800E0253D /* NavigationBar.swift */,
 				C9598CB625CC7AC600E0253D /* ZStackWithBackground.swift */,
 				C9598CB925CC7B2E00E0253D /* VStackWithNavigationBar.swift */,
+				C9598CC025CDC25D00E0253D /* CustomNavigationButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				C9598BC125BB28F800E0253D /* Scope.swift in Sources */,
 				C9598B9A25BB24D300E0253D /* WS_User.swift in Sources */,
 				C9598B7A25BB182E00E0253D /* AuthenticationModelController.swift in Sources */,
+				C9598CC125CDC25D00E0253D /* CustomNavigationButton.swift in Sources */,
 				C9598B9625BB24A300E0253D /* BattleNetAPI.swift in Sources */,
 				C9598BD125BB2B7000E0253D /* ClientToken.swift in Sources */,
 				C9598B8625BB191100E0253D /* UIEnums.swift in Sources */,

@@ -10,6 +10,7 @@ struct ClassAbilityView: View {
     var className: String
     var spellName: String
     var spellDescription: String
+    var isLast: Bool
     
     // # Private/Fileprivate
     
@@ -20,13 +21,16 @@ struct ClassAbilityView: View {
             
             Text(className)
                 .bold()
-                .foregroundColor(.textColour)
+                .foregroundColor(.gold)
             Text(spellName)
-                .foregroundColor(.textColour)
+                .foregroundColor(.background03)
             Text(spellDescription)
+                .font(.footnote)
                 .foregroundColor(.textColour)
+            
             Divider()
                 .background(Color.textColour)
+                .opacity(isLast ? 0.0 : 1.0)
         }
     }
     
@@ -45,6 +49,6 @@ struct ClassAbilityView: View {
 //=======================================
 struct ClassAbilityView_Previews: PreviewProvider {
     static var previews: some View {
-        ClassAbilityView(className: "Death Knight", spellName: "bleh", spellDescription: "signature big spell")
+        ClassAbilityView(className: "Death Knight", spellName: "bleh", spellDescription: "signature big spell", isLast: false)
     }
 }
