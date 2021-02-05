@@ -70,7 +70,7 @@ enum kUI {
         static let halfWideElementWidth: CGFloat = wideElementWidth * 0.5 - kUI.Spacing.buttonToButton
         static let bottomBarLargeHeight: CGFloat = UIDevice.hasNotch ? 110 : 94
         static let rectangleButtonHeight: CGFloat = 52
-        static let navigationBarHeight: CGFloat = UIDevice.hasNotch ? 88 : 64
+        static let navigationBarHeight: CGFloat = 50
         static let bottomBarHeight: CGFloat = UIDevice.hasNotch ? 104 : 44
         static let notchHeight: CGFloat = UIWindow.key?.safeAreaInsets.top ?? 0
         static let cellHeightLarge: CGFloat = 118

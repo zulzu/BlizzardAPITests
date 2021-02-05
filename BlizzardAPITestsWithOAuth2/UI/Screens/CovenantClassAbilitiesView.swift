@@ -15,17 +15,21 @@ struct CovenantClassAbilitiesView: View {
     // # Body
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStackWithNavigationBar(zStackAlignment: .top, navBarTitle: viewModel.covenantName + " class abilities", showBackButton: true) {
             
-            if viewModel.isCovenantLoaded {
+            ZStack {
                 
-                ScrollView {
+                if viewModel.isCovenantLoaded {
                     
-                    ForEach(0..<viewModel.playableClasses.count, id: \.self) { (idx)  in
+                    ScrollView {
                         
-                        ClassAbilityView(className: viewModel.playableClasses[idx], spellName: viewModel.spellName[idx], spellDescription: viewModel.spellDescription[idx])
-                            .modifier(AnimatedOpacity(delay: 0.4 * Double(idx)))
-                            .padding()
+                        ForEach(0..<viewModel.playableClasses.count, id: \.self) { (idx)  in
+                            
+                            ClassAbilityView(className: viewModel.playableClasses[idx], spellName: viewModel.spellName[idx], spellDescription: viewModel.spellDescription[idx])
+                                .foregroundColor(.textColour)
+                                .modifier(AnimatedOpacity(delay: 0.4 * Double(idx)))
+                                .padding()
+                        }
                     }
                 }
             }
@@ -33,8 +37,6 @@ struct CovenantClassAbilitiesView: View {
         .onAppear {
             viewModel.getCovenant(id: covenantID)
         }
-        .navigationBarTitle(viewModel.covenantName + " class abilities", displayMode: .large)
-        .padding()
     }
     
     //=======================================

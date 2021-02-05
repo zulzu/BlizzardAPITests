@@ -44,5 +44,6 @@ public extension Color {
     static let background02: Color = Color("background02")
     static let background03: Color = Color("background03")
     static let gold: Color = Color("gold")
+    static let textColour: Color = Color("textColour")    
 }
 #endif

@@ -16,32 +16,30 @@ struct CovenantsView: View {
         
         NavigationView {
             
-            VStack {
-                
-                Text("World of Warcraft Covenants in Shadowlands:")
-                    .font(.headline)
-                    .fontWeight(.bold)
-                    .foregroundColor(.gold)
-                    .padding()
-                
-                if viewModel.isCovenantLoaded {
+            VStackWithNavigationBar(zStackAlignment: .top, showBackButton: false) {
+                ScrollView {
                     
-                    ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
+                    Text("World of Warcraft Covenants in Shadowlands:")
+                        .font(.headline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.gold)
+                        .padding()
+                    
+                    if viewModel.isCovenantLoaded {
                         
-                        NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
-                            .frame(width: 220, height: 80, alignment: .center)
-                            .background(Color.blue)
-                            .cornerRadius(10.0)
-                            .accentColor(.black)
-                            .padding()
+                        ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
+                            
+                            NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
+                                .frame(width: 220, height: 80, alignment: .center)
+                                .background(Color.blue)
+                                .cornerRadius(10.0)
+                                .accentColor(.black)
+                                .padding()
+                        }
                     }
                 }
             }
         }
-        .background(Color.background01)
-        .foregroundColor(.background01)
-        .edgesIgnoringSafeArea(.all)
-        .navigationViewStyle(StackNavigationViewStyle())
         .onAppear {
             viewModel.getCovenantIndex()
         }

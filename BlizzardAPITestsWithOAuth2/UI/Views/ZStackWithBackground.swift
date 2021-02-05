@@ -1,47 +1,51 @@
 
+
 import SwiftUI
 
-struct ClassAbilityView: View {
+struct ZStackWithBackground<Content> : View where Content : View {
     
     //------------------------------------
     // MARK: Properties
     //------------------------------------
     // # Public/Internal/Open
-    var className: String
-    var spellName: String
-    var spellDescription: String
     
     // # Private/Fileprivate
+    private let alignment: Alignment
+    private var content: () -> Content
     
     // # Body
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 10) {
+        ZStack(alignment: alignment) {
             
-            Text(className)
-                .bold()
-            Text(spellName)
-            Text(spellDescription)
-            Divider()
-                .background(Color.textColour)
+            Color.background01
+                .edgesIgnoringSafeArea(.all)
+            
+            content()
         }
     }
     
     //=======================================
     // MARK: Public Methods
     //=======================================
+    public init(alignment: Alignment = .center, @ViewBuilder content: @escaping () -> Content) {
+        self.alignment = alignment
+        self.content = content
+    }
     
     //=======================================
     // MARK: Private Methods
     //=======================================
 }
 
-
 //=======================================
 // MARK: Previews
 //=======================================
-struct ClassAbilityView_Previews: PreviewProvider {
+struct ZStackWithBackground_Previews: PreviewProvider {
     static var previews: some View {
-        ClassAbilityView(className: "Death Knight", spellName: "bleh", spellDescription: "signature big spell")
+        ZStackWithBackground {
+            Text("Hello, World!")
+                .foregroundColor(.textColour)
+        }
     }
 }
