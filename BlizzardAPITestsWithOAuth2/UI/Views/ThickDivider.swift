@@ -1,32 +1,27 @@
 
 import SwiftUI
 
-struct ClassAbilityView: View {
+struct ThickDivider: View {
     
     //------------------------------------
     // MARK: Properties
     //------------------------------------
     // # Public/Internal/Open
-    var className: String
-    var spellName: String
-    var spellDescription: String
     
     // # Private/Fileprivate
     
     // # Body
     var body: some View {
         
-        VStack(alignment: .leading, spacing: 10) {
+        ZStack {
             
-            Text(className)
-                .bold()
-                .foregroundColor(.textColour)
-            Text(spellName)
-                .foregroundColor(.textColour)
-            Text(spellDescription)
-                .foregroundColor(.textColour)
             Divider()
+                .frame(height: 4)
+                .background(Color.background03)
+            Divider()
+                .frame(height: 2)
                 .background(Color.textColour)
+                .opacity(0.6)
         }
     }
     
@@ -43,8 +38,8 @@ struct ClassAbilityView: View {
 //=======================================
 // MARK: Previews
 //=======================================
-struct ClassAbilityView_Previews: PreviewProvider {
+struct ThickDivider_Previews: PreviewProvider {
     static var previews: some View {
-        ClassAbilityView(className: "Death Knight", spellName: "bleh", spellDescription: "signature big spell")
+        ThickDivider()
     }
 }

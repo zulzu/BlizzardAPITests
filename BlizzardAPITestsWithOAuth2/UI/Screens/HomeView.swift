@@ -14,9 +14,7 @@ struct HomeView: View {
     // # Body
     var body: some View {
         
-        ZStack {
-            
-            Color.background01
+        ZStackWithBackground {
             
             VStack {
                 
@@ -39,11 +37,10 @@ struct HomeView: View {
                     }
                 }
             }
-            .onAppear(perform: {
-                viewModel.login()
-            })
         }
-        .edgesIgnoringSafeArea(.all)
+        .onAppear(perform: {
+            viewModel.login()
+        })
     }
     
     //=======================================

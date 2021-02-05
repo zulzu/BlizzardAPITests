@@ -16,7 +16,7 @@ struct NavigationBar: View {
     // # Body
     var body: some View {
         
-        ZStackWithBackground() {
+        ZStackWithBackground {
             
             if showBackButton {
                 

@@ -17,25 +17,38 @@ struct CovenantsView: View {
         NavigationView {
             
             VStackWithNavigationBar(zStackAlignment: .top, showBackButton: false) {
-                ScrollView {
+                
+                ThickDivider()
+                
+                Text("World of Warcraft Covenants in Shadowlands")
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .foregroundColor(.gold)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                ThickDivider()
+                    .padding(.bottom, 40)
+                
+                if viewModel.isCovenantLoaded {
                     
-                    Text("World of Warcraft Covenants in Shadowlands:")
-                        .font(.headline)
-                        .fontWeight(.bold)
-                        .foregroundColor(.gold)
-                        .padding()
-                    
-                    if viewModel.isCovenantLoaded {
+                    ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
                         
-                        ForEach(0..<viewModel.covenantNames.count, id: \.self) { (idx)  in
-                            
-                            NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
-                                .frame(width: 220, height: 80, alignment: .center)
-                                .background(Color.blue)
-                                .cornerRadius(10.0)
-                                .accentColor(.black)
-                                .padding()
-                        }
+                        NavigationLink("\(viewModel.covenantNames[idx])", destination: CovenantMainView(viewModel: CovenantMainViewModel.init(), covenantID: idx + 1))
+                            .frame(width: 200, height: 60, alignment: .center)
+                            .background(Color.background03)
+                            .accentColor(.textColour)
+                            .opacity(1.0)
+                            .cornerRadius(10.0)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.background02, lineWidth: 4)
+                            )
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.gold, lineWidth: 2)
+                            )
+                            .padding()
                     }
                 }
             }
