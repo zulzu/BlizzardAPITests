@@ -34,6 +34,7 @@ struct HomeView: View {
                         Text("Getting data from Blizzard")
                             .font(.caption)
                             .foregroundColor(.background03)
+                            .modifier(Blink())
                     }
                 }
             }

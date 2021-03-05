@@ -1,6 +1,5 @@
 
 import Foundation
-import SwiftUI
 
 //=======================================
 // MARK: ViewModel
@@ -38,7 +37,7 @@ extension HomeViewModel {
             case .success(let token):
                 Debug.print("clientAccessToken: \(token)")
                 Debug.print("Ready for game data web services")
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     self.isLoggedIn = true
                 }
             case .failure(let error):

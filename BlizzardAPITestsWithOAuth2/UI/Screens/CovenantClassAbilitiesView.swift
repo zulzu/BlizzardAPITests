@@ -26,7 +26,7 @@ struct CovenantClassAbilitiesView: View {
                         ForEach(0..<viewModel.playableClasses.count, id: \.self) { (idx)  in
                             
                             ClassAbilityView(className: viewModel.playableClasses[idx], spellName: viewModel.spellName[idx], spellDescription: viewModel.spellDescription[idx], isLast: idx == (viewModel.playableClasses.count - 1) ? true : false)
-                                .modifier(AnimatedOpacity(delay: 0.4 * Double(idx)))
+                                .modifier(AnimatedFadeIn(delay: 0.4 * Double(idx)))
                                 .padding(.horizontal)
                                 .padding(.bottom, 10)
                         }

@@ -25,24 +25,24 @@ struct CovenantMainView: View {
                         
                         Text(viewModel.covenantDescription)
                             .foregroundColor(.textColour)
-                            .modifier(AnimatedOpacity(delay: 0.3))
+                            .modifier(AnimatedFadeIn(delay: 0.3))
                         
                         ThickDivider()
-                            .modifier(AnimatedOpacity(delay: 0.3))
+                            .modifier(AnimatedFadeIn(delay: 0.3))
                         
                         Text("Signature ability: \(viewModel.abilityName)")
                             .bold()
                             .foregroundColor(.textColour)
-                            .modifier(AnimatedOpacity(delay: 0.8))
+                            .modifier(AnimatedFadeIn(delay: 0.8))
                         
                         Text(viewModel.abilityDescription)
                             .foregroundColor(.textColour)
-                            .modifier(AnimatedOpacity(delay: 1.3))
+                            .modifier(AnimatedFadeIn(delay: 1.3))
                         
                         CustomNavigationButton(size: CGSize(width: 180, height: 50),
                                                text: "Class abilities",
                                                destination: CovenantClassAbilitiesView(viewModel: CovenantClassAbilitiesViewModel.init(), covenantID: covenantID))
-                            .modifier(AnimatedOpacity(delay: 1.8))
+                            .modifier(AnimatedFadeIn(delay: 1.8))
                             .padding(.top)
                         
                         Spacer()
