@@ -11,6 +11,7 @@ final class HomeViewModel: ObservableObject {
     //------------------------------------
     // # Public/Internal/Open
     @Published var isLoggedIn = false
+    @Published var errorMessage: String = ""
     
     // # Private/Fileprivate
     private let authManager = AuthenticationManager()
@@ -42,6 +43,7 @@ extension HomeViewModel {
                 }
             case .failure(let error):
                 ErrorHandler().handleError(error)
+                self.errorMessage = "\(error.message)"
             }
         }
     }

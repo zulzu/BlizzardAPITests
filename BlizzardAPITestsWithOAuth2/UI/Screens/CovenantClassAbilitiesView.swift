@@ -19,7 +19,11 @@ struct CovenantClassAbilitiesView: View {
             
             ZStack {
                 
-                if viewModel.isCovenantLoaded {
+                if viewModel.errorMessage != "" {
+                    
+                    ErrorMessageView(errorMessage: "\(viewModel.errorMessage)")
+                    
+                } else if viewModel.isCovenantLoaded {
                     
                     ScrollView {
                         

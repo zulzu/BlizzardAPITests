@@ -20,12 +20,19 @@ struct CovenantsView: View {
                 
                 ThickDivider()
                 
-                Text("World of Warcraft Covenants in Shadowlands")
-                    .font(.title3)
-                    .fontWeight(.bold)
-                    .foregroundColor(.gold)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                if viewModel.errorMessage != "" {
+                    
+                    ErrorMessageView(errorMessage: "\(viewModel.errorMessage)")
+                    
+                } else {
+                    
+                    Text("World of Warcraft Covenants in Shadowlands")
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(.gold)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                }
                 
                 ThickDivider()
                     .padding(.bottom, 40)

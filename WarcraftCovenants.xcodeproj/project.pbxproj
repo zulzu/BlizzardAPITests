@@ -60,6 +60,7 @@
 		C9598CBA25CC7B2E00E0253D /* VStackWithNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CB925CC7B2E00E0253D /* VStackWithNavigationBar.swift */; };
 		C9598CBE25CDB2A800E0253D /* ThickDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CBD25CDB2A800E0253D /* ThickDivider.swift */; };
 		C9598CC125CDC25D00E0253D /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9598CC025CDC25D00E0253D /* CustomNavigationButton.swift */; };
+		C9F847E225F2B38E001EAEFA /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F847E125F2B38E001EAEFA /* ErrorMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		C9598CB925CC7B2E00E0253D /* VStackWithNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VStackWithNavigationBar.swift; sourceTree = "<group>"; };
 		C9598CBD25CDB2A800E0253D /* ThickDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThickDivider.swift; sourceTree = "<group>"; };
 		C9598CC025CDC25D00E0253D /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
+		C9F847E125F2B38E001EAEFA /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				C9598CAC25C488F900E0253D /* ClassAbilityView.swift */,
+				C9F847E125F2B38E001EAEFA /* ErrorMessageView.swift */,
 				C9598CBD25CDB2A800E0253D /* ThickDivider.swift */,
 				C9598CB325CC79A800E0253D /* NavigationBar.swift */,
 				C9598CB625CC7AC600E0253D /* ZStackWithBackground.swift */,
@@ -448,6 +451,7 @@
 				C9598BD125BB2B7000E0253D /* ClientToken.swift in Sources */,
 				C9598B8625BB191100E0253D /* UIEnums.swift in Sources */,
 				C9598BB725BB27A700E0253D /* Result.swift in Sources */,
+				C9F847E225F2B38E001EAEFA /* ErrorMessageView.swift in Sources */,
 				C9598BA925BB263200E0253D /* HTTPError.swift in Sources */,
 				C9598CBE25CDB2A800E0253D /* ThickDivider.swift in Sources */,
 				C9598C5825BB3F4A00E0253D /* WorldOfWarcraftModelController.swift in Sources */,
@@ -580,7 +584,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"BlizzardAPITestsWithOAuth2/Preview Content\"";
 				DEVELOPMENT_TEAM = 7U8H9SK8NB;
 				ENABLE_PREVIEWS = YES;
@@ -590,7 +594,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.31;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.WarcraftCovenants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -604,7 +608,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"BlizzardAPITestsWithOAuth2/Preview Content\"";
 				DEVELOPMENT_TEAM = 7U8H9SK8NB;
 				ENABLE_PREVIEWS = YES;
@@ -614,7 +618,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.3;
+				MARKETING_VERSION = 0.31;
 				PRODUCT_BUNDLE_IDENTIFIER = com.andrasPal.WarcraftCovenants;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -12,6 +12,7 @@ final class CovenantsViewModel: ObservableObject {
     // # Public/Internal/Open
     @Published var covenantNames: Array<String> = []
     @Published var isCovenantLoaded = false
+    @Published var errorMessage: String = ""
     
     // # Private/Fileprivate
     private let wowMC = WorldOfWarcraftModelController.shared
@@ -49,6 +50,7 @@ extension CovenantsViewModel {
                     
                 case .failure(let error):
                     ErrorHandler().handleError(error)
+                    self.errorMessage = "\(error.message)"
                 }
             }
         }

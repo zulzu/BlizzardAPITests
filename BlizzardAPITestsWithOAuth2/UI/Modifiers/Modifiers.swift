@@ -25,7 +25,7 @@ struct Blink: ViewModifier {
     // For changing the opacity
     @State private var opacity: Double = 0.3
     // The type of the animation
-    var animation: Animation = .easeOut(duration: 0.5)
+    var animation: Animation = .linear(duration: 0.5)
     
     func body(content: Content) -> some View {
         content

@@ -14,7 +14,7 @@ final class CovenantClassAbilitiesViewModel: ObservableObject {
     @Published var playableClasses: Array<String> = []
     @Published var spellName: Array<String> = []
     @Published var spellDescription: Array<String> = []
-
+    @Published var errorMessage: String = ""
     @Published var isCovenantLoaded = false
     
     // # Private/Fileprivate
@@ -59,6 +59,7 @@ extension CovenantClassAbilitiesViewModel {
 
                 case .failure(let error):
                     ErrorHandler().handleError(error)
+                    self.errorMessage = "\(error.message)"
                 }
             }
         }

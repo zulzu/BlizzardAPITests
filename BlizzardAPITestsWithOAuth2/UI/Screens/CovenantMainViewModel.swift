@@ -14,7 +14,7 @@ final class CovenantMainViewModel: ObservableObject {
     @Published var covenantDescription: String = ""
     @Published var abilityName: String = ""
     @Published var abilityDescription: String = ""
-
+    @Published var errorMessage: String = ""
     @Published var isCovenantLoaded = false
     
     // # Private/Fileprivate
@@ -53,6 +53,7 @@ extension CovenantMainViewModel {
 
                 case .failure(let error):
                     ErrorHandler().handleError(error)
+                    self.errorMessage = "\(error.message)"
                 }
             }
         }
