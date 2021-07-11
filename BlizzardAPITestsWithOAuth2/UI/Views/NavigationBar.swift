@@ -23,7 +23,6 @@ struct NavigationBar: View {
                 HStack {
                     
                     Button(action: {
-                        print("back tapped")
                         self.mode.wrappedValue.dismiss()
                     }) {
                         HStack {

@@ -2,7 +2,7 @@
 import Foundation
 
 /// A protocol for a class that calls web services
-protocol WebService: class {
+protocol WebService: AnyObject {
     /// The base url of the web service to call
     func getBaseURL(region: APIRegion, apiType: APIType?) -> String
     /// Web service urls must include certain parameters, like namespace
