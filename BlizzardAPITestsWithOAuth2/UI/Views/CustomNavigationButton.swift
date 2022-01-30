@@ -32,7 +32,6 @@ struct CustomNavigationButton<Destination> : View where Destination : View {
                         RoundedRectangle(cornerRadius: kUI.Border.cornerRadius)
                             .stroke(Color.gold, lineWidth: 2)
                     )
-                
                 Text(text)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.textColour)

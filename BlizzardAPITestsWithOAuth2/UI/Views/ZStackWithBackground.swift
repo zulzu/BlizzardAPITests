@@ -20,7 +20,6 @@ struct ZStackWithBackground<Content> : View where Content : View {
             
             Color.background01
                 .edgesIgnoringSafeArea(.all)
-            
             content()
         }
     }

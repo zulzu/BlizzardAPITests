@@ -25,7 +25,6 @@ struct VStackWithNavigationBar<Content:View>: View {
                 
                 NavigationBar(title: self.navBarTitle, showBackButton: self.showBackButton)
                     .frame(height: kUI.Size.navigationBarHeight)
-                
                 self.content()
             }
         }

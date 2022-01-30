@@ -29,7 +29,6 @@ struct NavigationBar: View {
                             
                             Image(systemName: "chevron.left")
                                 .foregroundColor(.textColour)
-                            
                             Text("Back")
                                 .foregroundColor(.textColour)
                         }

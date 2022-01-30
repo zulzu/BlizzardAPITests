@@ -27,7 +27,6 @@ struct ClassAbilityView: View {
             Text(spellDescription)
                 .font(.footnote)
                 .foregroundColor(.textColour)
-            
             Divider()
                 .background(Color.textColour)
                 .opacity(isLast ? 0.0 : 1.0)
